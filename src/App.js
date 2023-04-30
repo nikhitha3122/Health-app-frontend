@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react'
+import Navbar from './components/Navbar';
+import { Route, Routes } from "react-router-dom"
+import Diabetes from './components/Diabetes'
+import Liver from './components/Liver'
+import Home from './components/Home'
+import Heart from './components/Heart'
+import Cancer from './components/Cancer'
+import Kidney from './components/Kidney'
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  
+  return(
+    <div>
+        <Navbar/>
+        <div className="container">
+        <Routes>
+        
+          <Route path="/" element={<Home/>}/>
+          <Route path="/diabetes" element={<Diabetes/>} />
+          <Route path="/liver" element={<Liver/>} />
+          <Route path="/kidney" element={<Kidney/>} />
+          <Route path="/heart" element={<Heart/>} />
+          <Route path="/cancer" element={<Cancer/>} />
+        </Routes>
+        
+      </div>
     </div>
   );
 }

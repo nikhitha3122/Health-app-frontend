@@ -1,0 +1,77 @@
+form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  
+  form div label {
+    margin-right: 20px;
+    min-width: 250px;
+    border-radius: 3px;
+  }
+  
+  form div input {
+    flex-grow: 1;
+    border-radius: 3px;
+
+  }
+  
+  .predict-btn{
+   
+        margin-left: 125px;
+    
+  }
+  button {
+    background-color: rgb(76, 166, 211) ;
+    border: none;
+    position: absolute;
+   top:62%;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    width:10%;
+    justify-content: 'center';
+    align-items:center;
+  }
+
+.pbutton
+{
+   text-align: center;
+}
+.title
+{
+    padding-top: 10%;
+    font-size: 50px;
+}
+.inpf
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh; 
+  }
+.title
+{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top:70%;
+    display: inline-block;
+}
+.result{
+    text-align: center;
+    padding-top: 5px;
+    font-size: 25px;
+}
